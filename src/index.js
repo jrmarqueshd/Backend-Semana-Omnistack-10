@@ -16,4 +16,4 @@ app.use(cors()); // Libera o acesso para a API para qualquer origin!
 app.use(express.json());
 app.use(routes);
 
-app.listen(3333);
+app.listen(process.env.PORT || 3333);
